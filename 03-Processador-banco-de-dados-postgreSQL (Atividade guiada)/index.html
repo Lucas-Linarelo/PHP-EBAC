@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Obras</title>
+</head>
+<body>
+    <h1>Registrar Obra</h1>
+    <form action="processar_obras.php" method="POST">
+        <label for="nome_projeto">Nome do Projeto:</label>
+        <input type="text" id="nome_projeto" name="nome_projeto" required><br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+
+        <label for="data_inicio">Data de Início:</label>
+        <input type="date" id="data_inicio" name="data_inicio" required><br><br>
+
+        <label for="data_fim">Data de Término:</label>
+        <input type="date" id="data_fim" name="data_fim"><br><br>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="Em andamento">Em andamento</option>
+            <option value="Concluída">Concluída</option>
+            <option value="Suspensa">Suspensa</option>
+        </select><br><br>
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao"></textarea><br><br>
+
+        <input type="submit" value="Registrar Obra">
+    </form>
+</body>
+</html>

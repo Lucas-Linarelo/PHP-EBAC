@@ -1,0 +1,8 @@
+Nome: Lucas
+Idade: 29
+Cidade: São Paulo
+---
+Nome: Felipe
+Idade: 31
+Cidade: Rio de Janeiro
+
