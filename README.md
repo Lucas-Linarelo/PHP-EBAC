@@ -1,5 +1,6 @@
 # Notas e desenvolvimento do estudo - **PHP**
 
+
 ## **Introdução ao PHP**
 
 
@@ -98,6 +99,7 @@ Arrays são usados para armazenar vários valores em uma única variável.
 
 ### **Conectando ao Banco de Dados (MySQL)**
 
+
 PHP pode interagir com bancos de dados, como o MySQL.
 
 Exemplo básico de conexão com banco de dados:
@@ -113,7 +115,6 @@ Exemplo básico de conexão com banco de dados:
   echo "Conectado com sucesso!";
 ?>
 ```
-
 
 ### **Iniciar o Servidor PHP Local**
 
@@ -194,32 +195,6 @@ function fatorial($n) {
 echo fatorial(5);  // Saída: 120
 ?>
 ```
-
-### 3. **Sessões**
-
-Sessões permitem armazenar informações do usuário enquanto ele navega pelas páginas. As informações ficam armazenadas no servidor e são acessíveis enquanto a sessão estiver ativa.
-
-### 3.1. **Iniciando uma sessão**
-
-Antes de usar sessões, você precisa inicializá-la.
-
-```php
-<?php
-session_start();  // Inicia a sessão
-$_SESSION["usuario"] = "Kai";  // Armazena dados na sessão
-echo "Olá, " . $_SESSION["usuario"];  // Acessa os dados da sessão
-?>
-```
-
-### 3.2. **Destruindo uma sessão**
-
-```php
-<?php
-session_start();
-session_destroy();  // Remove todas as variáveis de sessão
-?>
-```
-
 ### 2. **Manipulação de Arquivos**
 
 
@@ -296,9 +271,33 @@ if ($arquivo) {
 3. **`fgets`**: Lê uma linha por vez do arquivo.
 4. **`fclose`**: Fecha o arquivo ao final da leitura.
 
-### 4. **Cookies**
+### 3. **Sessões**
 
----
+
+Sessões permitem armazenar informações do usuário enquanto ele navega pelas páginas. As informações ficam armazenadas no servidor e são acessíveis enquanto a sessão estiver ativa.
+
+### 3.1. **Iniciando uma sessão**
+
+Antes de usar sessões, você precisa inicializá-la.
+
+```php
+<?php
+session_start();  // Inicia a sessão
+$_SESSION["usuario"] = "Kai";  // Armazena dados na sessão
+echo "Olá, " . $_SESSION["usuario"];  // Acessa os dados da sessão
+?>
+```
+
+### 3.2. **Destruindo uma sessão**
+
+```php
+<?php
+session_start();
+session_destroy();  // Remove todas as variáveis de sessão
+?>
+```
+
+### 4. **Cookies**
 
 Cookies são usados para armazenar pequenas quantidades de dados no navegador do usuário. Eles podem durar por um tempo determinado ou até que o navegador seja fechado.
 
@@ -320,9 +319,9 @@ setcookie("usuario", "", time() - 3600, "/");  // Define um cookie com tempo de 
 ?>
 ```
 
+
 ### O que é `$_SERVER`?
 
----
 
 `$_SERVER` é uma **superglobal** do PHP, uma variável disponível globalmente que contém informações sobre o ambiente do servidor e da requisição. As superglobais, como `$_SERVER`, `$_POST`, `$_GET`, são acessíveis de qualquer parte do código, sem a necessidade de serem passadas como parâmetro.
 
@@ -334,6 +333,7 @@ No caso de `$_SERVER["REQUEST_METHOD"]`, essa variável indica o **método HTTP*
 - **POST**: Dados enviados no corpo da requisição, não visíveis na URL (usado para enviar formulários, fazer uploads, etc.).
 
 ### Como funciona `$_SERVER["REQUEST_METHOD"] == "POST"`?
+
 
 Essa verificação identifica se o método utilizado na requisição foi **POST**. Ou seja, quando um formulário é enviado via POST, essa condição será verdadeira. É comum usarmos essa verificação para processar dados enviados por formulários de maneira segura, garantindo que o PHP execute o código de processamento **apenas** quando o formulário for enviado, e não ao simplesmente carregar a página.
 
@@ -373,6 +373,7 @@ Para que o código acima funcione, você precisa de um formulário HTML que envi
 
 ### Resumo para Estudo
 
+---
 
 1. `$_SERVER["REQUEST_METHOD"]` retorna o método HTTP usado para a requisição.
 2. `$_SERVER["REQUEST_METHOD"] == "POST"` é usado para verificar se o formulário foi enviado via POST.
@@ -419,7 +420,6 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 Isso ajuda a garantir que apenas endereços de e-mail válidos sejam processados em seu aplicativo PHP.
 
 ### Conn
-
 
 `$conn` é uma extensão do PHP usada para interagir com o banco de dados MySQL. Essa variável armazena a instância da classe **`mysqli`**, representando a conexão estabelecida com o banco de dados MySQL no PHP. Essa instância permite que você interaja com o banco de dados para realizar operações como consultas, inserções, atualizações e exclusões.
 
