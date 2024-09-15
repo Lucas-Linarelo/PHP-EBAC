@@ -1,5 +1,23 @@
 # Notas e desenvolvimento do estudo - **PHP**
 
+### Projetos do estudo
+
+#### [Leitor de dados](https://github.com/Lucas-Linarelo/PHP-EBAC/tree/main/00-Leitor_de_dados)
+Um leitor de dados simples em PHP.<br>
+[![Leitor de Dados](https://img.shields.io/badge/Acessar%20Projeto-Leitor%20de%20Dados-blue)](https://github.com/Lucas-Linarelo/PHP-EBAC/tree/main/00-Leitor_de_dados)
+
+#### [Calculadora de idade](https://github.com/Lucas-Linarelo/PHP-EBAC/tree/main/01-Calculadora-idade)
+Calcula a idade com base na data de nascimento.<br>
+[![Calculadora de Idade](https://img.shields.io/badge/Acessar%20Projeto-Calculadora%20de%20Idade-blue)](https://github.com/Lucas-Linarelo/PHP-EBAC/tree/main/01-Calculadora-idade)
+
+#### [Contato cliente](https://github.com/Lucas-Linarelo/PHP-EBAC/tree/main/02-Contato-cliente)
+Conjunto de SQL e PHP para formulários em HTML.<br>
+[![Contato Cliente](https://img.shields.io/badge/Acessar%20Projeto-Contato%20Cliente-blue)](https://github.com/Lucas-Linarelo/PHP-EBAC/tree/main/02-Contato-cliente)
+
+#### [Processador de dados](https://github.com/Lucas-Linarelo/PHP-EBAC/tree/main/03-Processador-banco-de-dados-postgreSQL%20(Atividade%20guiada))
+Processa dados de Nome de projeto, endereços, datas, status e descrições.<br>
+[![Processador de Dados](https://img.shields.io/badge/Acessar%20Projeto-Processador%20de%20Dados-blue)](https://github.com/Lucas-Linarelo/PHP-EBAC/tree/main/03-Processador-banco-de-dados-postgreSQL%20(Atividade%20guiada))
+
 
 ## **Introdução ao PHP**
 
