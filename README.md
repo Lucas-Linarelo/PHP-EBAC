@@ -478,7 +478,6 @@ $stmt->bind_param("sid", $nome, $idade, $salario);
 - **Eficiência**: A mesma consulta pode ser executada várias vezes com diferentes parâmetros sem ser recompilada no servidor de banco de dados.
 
 Essencialmente, `$stmt` é um objeto que representa a consulta SQL preparada e pronta para ser executada, proporcionando segurança e eficiência no acesso ao banco de dados.
-Legenda de caractere STMT:
 
 - **"s"**: Significa **string**. Isso é usado quando o valor do parâmetro é uma cadeia de caracteres (texto).
 - **"i"**: Significa **integer** (inteiro). Usado para números inteiros.
